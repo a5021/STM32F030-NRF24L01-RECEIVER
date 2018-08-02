@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>4055457926</fileChecksum>
+    <configuration>
+        <name>F031F6P6</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\main.c</file>
+            <file>$PROJ_DIR$\..\src\system_stm32f0xx.c</file>
+            <file>$PROJ_DIR$\startup_stm32f031x6.s</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\..\inc\stm32f0xx.h</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Obj\STM32F030-NRF24L01-RECEIVER.pbd</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Obj\system_stm32f0xx.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\..\inc\system_stm32f0xx.h</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Obj\startup_stm32f031x6.o</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Exe\F031F6P6.out</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Exe\STM32F030-NRF24L01-RECEIVER.bin</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm0.h</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Obj\system_stm32f0xx.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\..\inc\stm32f031x6.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19 16 23 20 9 17 10 24 21 25 11 26 5 3 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\system_stm32f0xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17 16 24 20 9 10 11 26 23 6 3 19 25 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_stm32f031x6.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM32F030-NRF24L01-RECEIVER\Exe\F031F6P6.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+</project>

@@ -45,6 +45,16 @@
 # Kernel Module Compile Results
 *.mod*
 *.cmd
+
+*.uvguix.*
+*.scvd
+build/
+EWARM/STM32F030-NRF24L01-RECEIVER/
+EWARM/settings
+DebugConfig/
+Listings/
+Objects/
+RTE/
 .tmp_versions/
 modules.order
 Module.symvers
