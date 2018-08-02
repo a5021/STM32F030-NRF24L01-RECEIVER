@@ -410,6 +410,7 @@ int main() {
        uputx(_buf[i] & 0x0F);
       }
       CSN(SET_HIGH);
+      uputc(10);
     }
 
     while((USART1->ISR & USART_ISR_TC) != USART_ISR_TC) {

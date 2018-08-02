@@ -635,7 +635,7 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>3</version>
-                    <state>3</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
@@ -643,7 +643,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>F031F6P6.bin</state>
+                    <state>STM32F030-NRF24L01-RECEIVER.hex</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -1033,7 +1033,7 @@
         <group>
             <name>User</name>
             <file>
-                <name>$PROJ_DIR$\..\main.c</name>
+                <name>$PROJ_DIR$\..\src\main.c</name>
             </file>
         </group>
     </group>
@@ -1042,8 +1042,23 @@
         <group>
             <name>CMSIS</name>
             <file>
-                <name>$PROJ_DIR$\..\src\system_stm32f0xx.c</name>
+                <name>$PROJ_DIR$\..\inc\CMSIS\cmsis_gcc.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\inc\CMSIS\core_cm0.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\inc\CMSIS\core_cmFunc.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\inc\CMSIS\core_cmInstr.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\inc\CMSIS\core_cmSimd.h</name>
             </file>
         </group>
+        <file>
+            <name>$PROJ_DIR$\..\src\system_stm32f0xx.c</name>
+        </file>
     </group>
 </project>
