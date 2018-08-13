@@ -2,7 +2,7 @@
 <project>
     <fileVersion>3</fileVersion>
     <configuration>
-        <name>F031F6P6</name>
+        <name>STM32F030-NRF24L01-RECEIVER</name>
         <toolchain>
             <name>ARM</name>
         </toolchain>
@@ -698,7 +698,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>F031F6P6.out</state>
+                    <state>STM32F030-NRF24L01-RECEIVER.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>

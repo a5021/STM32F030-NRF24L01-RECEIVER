@@ -2,7 +2,7 @@
 <project>
     <fileVersion>3</fileVersion>
     <configuration>
-        <name>F031F6P6</name>
+        <name>STM32F030-NRF24L01-RECEIVER</name>
         <toolchain>
             <name>ARM</name>
         </toolchain>

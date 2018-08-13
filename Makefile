@@ -100,7 +100,7 @@ C_INCLUDES =  \
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
-CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -fverbose-asm -std=c99
 
 ifeq ($(DEBUG), 1)
 CFLAGS += -g -gdwarf-2
@@ -111,7 +111,7 @@ endif
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 
 STLINK = "C:\Program Files\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility\ST-LINK_CLI.exe" 
-STLINK_FLAGS = -c UR -V -P $(BUILD_DIR)/$(TARGET).hex -rst 
+STLINK_FLAGS = -c UR -V -P $(BUILD_DIR)/$(TARGET).hex -Hardrst -Run
 
 
 #######################################

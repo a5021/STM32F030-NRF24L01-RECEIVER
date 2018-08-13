@@ -46,6 +46,7 @@
 *.mod*
 *.cmd
 
+*.log
 *.uvguix.*
 *.scvd
 build/
@@ -60,3 +61,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+*.sublime*
