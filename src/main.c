@@ -175,8 +175,8 @@ void __STATIC_INLINE initSPI1(void) {
 #define NRF24_RF_CH_REG           0x05
 #define NRF24_STATUS_REG          0x07
 #define NRF24_FIFO_STATUS_REG     0x17
-#define NRF24_DYNPD_REG	          0x1C
-#define NRF24_FEATURE_REG	        0x1D
+#define NRF24_DYNPD_REG           0x1C
+#define NRF24_FEATURE_REG         0x1D
 
 /* 00: CONFIG register bits from 0 t0 6, bit 7 must be set to 0               */
 /* ============================================================               */
