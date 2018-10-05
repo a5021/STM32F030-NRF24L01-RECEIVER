@@ -93,7 +93,7 @@ AS_INCLUDES =
 
 # C includes
 C_INCLUDES =  \
--Iinc\CMSIS \
+-Iinc/CMSIS \
 -Iinc \
 
 # compile gcc flags
