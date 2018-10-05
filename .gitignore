@@ -49,6 +49,9 @@
 *.log
 *.uvguix.*
 *.scvd
+*.jlin*
+*.em*
+*.jdebug*
 build/
 EWARM/STM32F030-NRF24L01-RECEIVER/
 EWARM/settings
@@ -61,4 +64,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+JLink*
 *.sublime*
