@@ -20,16 +20,16 @@ TARGET = STM32F030-NRF24L01-RECEIVER
 # building variables
 ######################################
 # debug build?
-DEBUG = 1
+DEBUG = 0
 # optimization
-OPT = -Og
+OPT = -Ofast
 
 
 #######################################
 # paths
 #######################################
 # Build path
-BUILD_DIR = build
+BUILD_DIR = _build
 
 ######################################
 # source
@@ -85,17 +85,16 @@ AS_DEFS =
 
 # C defines
 C_DEFS =  \
--DSTM32F031x6
-
+-DSTM32F031x6 \
+-DNDEBUG
 
 # AS includes
 AS_INCLUDES = 
 
 # C includes
 C_INCLUDES =  \
+-Iinc\CMSIS \
 -Iinc \
--Iinc\CMSIS
-
 
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
