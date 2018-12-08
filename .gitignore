@@ -50,11 +50,11 @@
 *.uvguix.*
 *.scvd
 *.jlin*
-*.em*
 *.jdebug*
 build/
 EWARM/STM32F030-NRF24L01-RECEIVER/
 EWARM/settings
+Output/
 DebugConfig/
 Listings/
 Objects/
@@ -67,3 +67,5 @@ Mkfile.old
 dkms.conf
 JLink*
 *.sublime*
+**/*.emSession
+

@@ -1,0 +1,79 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="STM32F030-NRF24L01-RECEIVER" target="8" version="2">
+  <project Name="STM32F030-NRF24L01-RECEIVER">
+    <configuration
+      Name="Common"
+      arm_architecture="v6M"
+      arm_core_type="Cortex-M0"
+      arm_endian="Little"
+      arm_fp_abi="Soft"
+      arm_fpu_type="None"
+      arm_linker_heap_size="1024"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="1024"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00008000,FFFFFFFF;RWX 20000000,00001000,CDCDCDCD"
+      arm_target_device_name="STM32F031F6"
+      arm_target_interface_type="SWD"
+      debug_target_connection="J-Link"
+      link_linker_script_file="$(ProjectDir)/SEGGER_Flash.icf"
+      linker_output_format="hex"
+      linker_section_placements_segments="FLASH RX 0x08000000 0x00008000;RAM RWX 0x20000000 0x00001000"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="../src/main.c" />
+    </folder>
+    <folder Name="RTT Files">
+      <file file_name="SEGGER_RTT.c" />
+      <file file_name="SEGGER_RTT.h" />
+      <file file_name="SEGGER_RTT_Conf.h" />
+      <file file_name="SEGGER_RTT_Syscalls_SES.c" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="Cortex_M_Startup.s" />
+      <file file_name="HardFaultHandler.S" />
+      <file file_name="SEGGER_HardFaultHandler.c" />
+      <file file_name="SEGGER_THUMB_Startup.s" />
+    </folder>
+    <configuration
+      CMSIS_CORE="Yes"
+      CMSIS_DSP="Cortex-M0 Little Endian"
+      Name="Debug"
+      arm_assembler_variant="clang"
+      arm_compiler_variant="clang"
+      c_preprocessor_definitions="STM32F031x6"
+      c_system_include_directories="$(StudioDir)/include;$(PackagesDir)/include;../inc;../inc/CMSIS"
+      gcc_c_language_standard="c11"
+      gcc_cplusplus_language_standard="c++1z"
+      gcc_dwarf_version="dwarf-4" />
+    <configuration
+      CMSIS_CORE="Yes"
+      CMSIS_DSP="Cortex-M0 Little Endian"
+      Name="Release"
+      arm_assembler_variant="clang"
+      arm_compiler_variant="clang"
+      c_preprocessor_definitions="STM32F031x6"
+      c_system_include_directories="$(StudioDir)/include;$(PackagesDir)/include;../inc;../inc/CMSIS"
+      gcc_c_language_standard="c11"
+      gcc_cplusplus_language_standard="c++1z"
+      gcc_optimization_level="Level 3"
+      link_dedupe_code="Yes"
+      link_dedupe_data="Yes"
+      link_inline="Yes"
+      link_merge_strings="Yes"
+      link_time_optimization="Yes" />
+  </project>
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1" />
+</solution>
